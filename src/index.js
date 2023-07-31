@@ -1,5 +1,6 @@
 import { strInterval, clrInterval, reset } from "./counter/counter.js";
 import { strTimer, stpTimer, resetTimer } from "./timer/timer.js";
+
 // counter part
 const hours = document.querySelector("#render-hours");
 const minutes = document.querySelector("#render-minutes");
@@ -28,12 +29,14 @@ document
 
 // timer part
 const timerHours = document.getElementsByClassName("timer-hours")[0];
-const initialtimerHour = timerHours.value;
 const timerMinutes = document.getElementsByClassName("timer-minutes")[0];
-const initialTimerMinutes = timerMinutes.value;
 const timerSeconds = document.getElementsByClassName("timer-seconds")[0];
-const initialTimerSeconds = timerSeconds.value;
+
 var timerInterval;
+
+const initialtimerHour = timerHours.value;
+const initialTimerMinutes = timerMinutes.value;
+const initialTimerSeconds = timerSeconds.value;
 
 document
   .querySelector(".start-timer")
